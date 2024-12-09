@@ -21,16 +21,18 @@
 <body>
 	<h2 style="text-align: center;">List of Cricket players</h2>
 	<?php
-	$players = [
+	$players =[
 	"Virat Kohli",
 	"Dilbar",
 	"KL Rahul"
 	];
 	echo "<table>";
-	echo "<tr><th> Playr Names</th></tr>";
+	echo "<tr><th> S.No</th><th> Playr Names</th></tr>";
 	
+	$serial_num =1;
 	foreach($players as $player){
-		echo "<tr><td>".$player . "</td></tr>";
+		echo "<tr><td>$serial_num</td><td>".$player . "</td></tr>";
+		$serial_num++;
 		
 	}
 	
